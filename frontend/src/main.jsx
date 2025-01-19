@@ -6,6 +6,8 @@ import "./index.css";
 import Home from "./pages/Home.jsx";
 import Signup from "./pages/Signup.jsx";
 import Login from "./pages/Login.jsx";
+import ForgotPassword from "./pages/ForgotPassword.jsx";
+import VerifyEmailPage from "./pages/VerifyEmailPage.jsx";
 
 function AppRouter() {
   const router = createBrowserRouter([
@@ -26,6 +28,16 @@ function AppRouter() {
         {
           path: "/login",
           element: <Login />,
+        },
+
+        {
+          path: "/forgot-password",
+          element: <ForgotPassword />,
+        },
+
+        {
+          path: "/verify-email",
+          element: <VerifyEmailPage />,
         },
       ],
     },
