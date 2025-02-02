@@ -2,7 +2,9 @@ import { Outlet } from "react-router";
 import FloatingShape from "./components/FloatingShape";
 import { Toaster } from "react-hot-toast";
 
+
 function App() {
+  
   return (
     <>
       <div className="min-h-screen bg-gradient-to-br from-gray-900 via-green-900 to-emerald-900 flex items-center justify-center relative overflow-hidden ">
@@ -29,7 +31,7 @@ function App() {
           delay={2}
         />
 
-        <Toaster/>
+        <Toaster />
       </div>
     </>
   );
