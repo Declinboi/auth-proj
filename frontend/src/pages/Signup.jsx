@@ -16,14 +16,14 @@ const SignUp= () => {
 
   const handleSignUp = async (e) => {
     e.preventDefault();
-
     try {
       await signup(email, password, name);
-      navigate("/verify-email");
+      navigate( "/verify-email");
     } catch (error) {
       console.log(error);
     }
   };
+
   return (
     <motion.div
       initial={{ opacity: 0, y: 20 }}

@@ -96,7 +96,7 @@ function AppRouter() {
 
         {
           path: "/verify-email",
-          element: <VerifyEmailPage />,
+          element: <VerifyEmailPage />
         },
 
         {
@@ -118,7 +118,7 @@ function AppRouter() {
         // catch all routes
         {
           path: "*",
-          element: <Navigate to={"/"} replace />,
+          element: <Navigate to="/" replace />,
         },
       ],
     },
