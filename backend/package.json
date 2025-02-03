@@ -4,7 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "dev": "nodemon index.js"
+    "dev": " NODE_ENV=development nodemon index.js",
+    "start": "NODE_ENV=production node index.js",
+    "build": "npm install && npm install --prefix ../frontend && npm run build --prefix ../frontend"
   },
   "repository": {
     "type": "git",

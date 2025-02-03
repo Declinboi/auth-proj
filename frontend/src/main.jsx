@@ -80,7 +80,7 @@ function AppRouter() {
           path: "/login",
           element: (
             <RedirectAuthenticatedUser>
-              <Login />,
+              <Login />
             </RedirectAuthenticatedUser>
           ),
         },
@@ -89,7 +89,7 @@ function AppRouter() {
           path: "/forgot-password",
           element: (
             <RedirectAuthenticatedUser>
-              <ForgotPassword />,
+              <ForgotPassword />
             </RedirectAuthenticatedUser>
           ),
         },
@@ -114,6 +114,11 @@ function AppRouter() {
               <ResetPassword />
             </RedirectAuthenticatedUser>
           ),
+        },
+        // catch all routes
+        {
+          path: "*",
+          element: <Navigate to={"/"} replace />,
         },
       ],
     },
